@@ -14,4 +14,16 @@ public class StopPlayer {
        params.put("playerid","0");
         return params;
     }
+
+    public String getMethod() {
+        return method;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getJsonrpc() {
+        return jsonrpc;
+    }
 }
