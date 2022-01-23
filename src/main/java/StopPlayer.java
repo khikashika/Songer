@@ -1,19 +1,19 @@
+import okhttp3.*;
+
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class StopPlayer {
-    private String method = "Player.Stop";
+
     private int id = 1;
     private String jsonrpc = "2.0";
-    private HashMap params = new HashMap<String,String>(){{
+    private String method = "Player.Stop";
 
-   put("playerid","0");
-    }};
+    Map<String, String> params = new HashMap<String, String>();
 
-    public HashMap getParams() {
-       params.put("playerid","0");
-        return params;
-    }
+
 
     public String getMethod() {
         return method;
@@ -26,4 +26,6 @@ public class StopPlayer {
     public String getJsonrpc() {
         return jsonrpc;
     }
+
+
 }
