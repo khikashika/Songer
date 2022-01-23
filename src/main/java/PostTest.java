@@ -43,8 +43,7 @@ public class PostTest{
         HttpPost post = new HttpPost("http://kodi:123@192.168.1.205:8080/jsonrpc");
         //HttpPost post = new HttpPost("http://kodi:123@127.0.0.1:8081/jsonrpc");
 
-        post.addHeader(header);
-        post.setRe((new UrlEncodedFormEntity()));
+
 
 
         HttpResponse response = httpClient.execute(post);
