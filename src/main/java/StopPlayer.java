@@ -1,4 +1,4 @@
-import okhttp3.*;
+
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -7,11 +7,27 @@ import java.util.Map;
 
 public class StopPlayer {
 
-    private int id = 1;
-    private String jsonrpc = "2.0";
-    private String method = "Player.Stop";
+    private int id;
+    private String jsonrpc ;
+    private String method  ;
+    private Map<String, Integer> params = new HashMap<String, Integer>(){
+        @Override
+        public String toString() {
 
-    Map<String, String> params = new HashMap<String, String>();
+            return super.toString();
+        }
+    };
+
+    StopPlayer(){
+        id = 1;
+        jsonrpc = "2.0";
+        method = "Player.Stop";
+        params.put("playerid",0);
+    }
+
+
+
+
 
 
 

@@ -1,22 +1,21 @@
-import com.fasterxml.jackson.databind.ObjectMapper;
+
+import com.google.gson.Gson;
 
 import java.io.IOException;
 import java.io.StringWriter;
 
 public class ObjectToJsonString {
     public String makeJsonString(Object obj){
-        ObjectMapper mapper = new ObjectMapper();
-        StringWriter stringWriter = new StringWriter();
-        try {
-            mapper.writeValue(stringWriter,obj);
-        } catch (IOException e) {
-            System.out.println("Can't map object");
-            e.printStackTrace();
-        }
-        String strJson = stringWriter.toString();
+        Gson gson = new Gson();
 
-        strJson = strJson.replace("\"","\\\"");
-        strJson="\""+strJson+"\"";
+        String strJson = gson.toJson(obj);
+
+
+//        strJson = strJson.replace("\"","\\\"");
+//        strJson="\""+strJson+"\"";
+//        strJson = strJson.replace("{","{\\n");
+//        strJson = strJson.replace("}","}\\n");
+//        strJson = strJson.replace(",",",\\n");
         System.out.println(strJson);
 
         return strJson;

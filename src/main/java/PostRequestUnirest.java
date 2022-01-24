@@ -10,6 +10,7 @@ public class PostRequestUnirest {
                 .header("Content-Type","application/json")
                 .body(jsonString)
                 //.body("{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"Player.Stop\",\n    \"params\": {\n        \"playerid\": 0\n    }\n}")
+                //.body("{\n\"id\": 1,\n\"jsonrpc\": \"2.0\",\n\"method\": \"Player.Stop\",\n\"params\": {\n\"playerid\":0\n}\n}")
                 .asJson();
         //response.getBody()
         return response.getBody().toString();
