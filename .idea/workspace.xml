@@ -19,23 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa82c848-5113-4bd4-9cc2-a623e27a0ece" name="Default Changelist" comment="4nd test commit">
-      <change afterPath="$PROJECT_DIR$/.idea/Songer1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TelegramBot/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="25c8b95f-dcdf-45ff-9c95-924c0edf961e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_01_2022_12_45_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_01_2022_12_45__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JsonMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ObjectToJsonString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ObjectToJsonString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PostRequestOkHttp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PostRequestUnirest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PostRequestUnirest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StopPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StopPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Songer.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ObjectToJsonString.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ObjectToJsonString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PostRequestOkHttp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PostRequestUnirest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PostRequestUnirest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PostTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PostTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KodiObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/KodiObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ObjectToJsonString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/ObjectToJsonString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PostRequestUnirest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/PostRequestUnirest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/PostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StopPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/StopPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TelegramBot/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/TelegramBot/Bot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,51 +40,41 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="23yKDpTOlD3bpPEDwLy417RHlhz" />
+  <component name="ProjectId" id="23zyC58a8C7iIhSRaBo7wfK31QM" />
   <component name="ProjectViewState">
-    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.PostTest">
-    <configuration name="Dragt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dragt" />
-      <module name="Songer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="PostTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="PostTest" />
-      <module name="Songer1" />
+      <option name="MAIN_CLASS_NAME" value="Songer.PostTest" />
+      <module name="Songer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Songer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Dragt" />
-      <item itemvalue="Application.PostTest" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.PostTest" />
-        <item itemvalue="Application.Dragt" />
       </list>
     </recent_temporary>
   </component>
@@ -98,29 +83,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aa82c848-5113-4bd4-9cc2-a623e27a0ece" name="Default Changelist" comment="" />
-      <created>1642700769663</created>
+      <changelist id="25c8b95f-dcdf-45ff-9c95-924c0edf961e" name="Default Changelist" comment="" />
+      <created>1642751078791</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1642700769663</updated>
-      <workItem from="1642700771017" duration="22505000" />
-      <workItem from="1643028867134" duration="5148000" />
+      <updated>1642751078791</updated>
+      <workItem from="1642751079949" duration="1867000" />
+      <workItem from="1643622232089" duration="6536000" />
     </task>
-    <task id="LOCAL-00001" summary="3nd test commit">
-      <created>1642712335811</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1642712335811</updated>
-    </task>
-    <task id="LOCAL-00002" summary="4nd test commit">
-      <created>1642927637393</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1642927637393</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,97 +108,46 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="2nd test commit" />
-    <MESSAGE value="3nd test commit" />
-    <MESSAGE value="4nd test commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="4nd test commit" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="676" y="143" key="#PostTest" timestamp="1643031165435">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1643725350079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="676" y="143" key="#PostTest/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643031165435" />
-    <state x="245" y="129" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1643031186672">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643725350079" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1643622290634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1642702396201" />
-    <state x="245" y="129" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643031186672" />
-    <state x="739" y="224" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1643031142839">
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643622290633" />
+    <state width="1879" height="282" key="GridCell.Tab.0.bottom" timestamp="1643700163903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="224" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643031142839" />
-    <state x="711" y="183" key="#com.intellij.ide.util.MemberChooser" timestamp="1643033065225">
+    <state width="1879" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643700163903" />
+    <state width="1879" height="282" key="GridCell.Tab.0.center" timestamp="1643700163903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="533" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1642974305242" />
-    <state x="711" y="183" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643033065225" />
-    <state width="479" height="466" key="DebuggerActiveHint" timestamp="1642942451960">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="479" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1642942451960" />
-    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1642703082750">
-      <screen x="0" y="23" width="1440" height="832" />
-    </state>
-    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.23.1440.832@0.23.1440.832" timestamp="1642703082750" />
-    <state width="1879" height="282" key="GridCell.Tab.0.bottom" timestamp="1643032016009">
+    <state width="1879" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643700163903" />
+    <state width="1879" height="282" key="GridCell.Tab.0.left" timestamp="1643700163903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1642975818462" />
-    <state width="1879" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643032016009" />
-    <state width="1879" height="282" key="GridCell.Tab.0.center" timestamp="1643032016009">
+    <state width="1879" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643700163903" />
+    <state width="1879" height="282" key="GridCell.Tab.0.right" timestamp="1643700163903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1642975818461" />
-    <state width="1879" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643032016009" />
-    <state width="1879" height="282" key="GridCell.Tab.0.left" timestamp="1643032016009">
+    <state width="1879" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643700163903" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1643638901328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1642975818460" />
-    <state width="1879" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643032016009" />
-    <state width="1879" height="282" key="GridCell.Tab.0.right" timestamp="1643032016009">
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643638901328" />
+    <state x="811" y="437" key="VCS.ChangelistChooser" timestamp="1643622379520">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1642975818461" />
-    <state width="1879" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643032016009" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1642952324612">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1642952324612" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1642952324611">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1642952324611" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1642952324610">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1642952324610" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1642952324611">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1642952324611" />
-    <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1642711847956">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="258" y="112" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1642711847956" />
-    <state x="385" y="182" key="new project wizard" timestamp="1643029532579">
+    <state x="811" y="437" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643622379520" />
+    <state x="782" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1643622388902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="385" y="182" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643029532579" />
-    <state x="623" y="225" key="search.everywhere.popup" timestamp="1643029255338">
+    <state x="782" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643622388902" />
+    <state x="704" y="311" key="git4idea.merge.GitPullDialog" timestamp="1643622268993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643029255338" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/PostTest.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="704" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643622268993" />
   </component>
 </project>

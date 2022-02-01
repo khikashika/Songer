@@ -1,10 +1,12 @@
+package Songer;
 
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
+@Component("stopPlayer")
 public class StopPlayer {
 
     private int id;
