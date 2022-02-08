@@ -13,6 +13,7 @@ public class PostRequestUnirest {
 
     public String uniPost(String url, String jsonString){
         try {
+            System.out.println("Connecting to kodi server");
             HttpResponse  response = Unirest.post(url)
                     .header("Content-Type","application/json")
                     .body(jsonString)
@@ -23,7 +24,7 @@ public class PostRequestUnirest {
             return response.getBody().toString();
         } catch (UnirestException e) {
             e.printStackTrace();
-            return ("Error");
+            return ("Connecting to KODI Error");
         }
 
     }}

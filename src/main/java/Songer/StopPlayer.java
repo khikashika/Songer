@@ -20,7 +20,7 @@ public class StopPlayer {
         }
     };
 
-    StopPlayer(){
+    public StopPlayer(){
         id = 1;
         jsonrpc = "2.0";
         method = "Player.Stop";

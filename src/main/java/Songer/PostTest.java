@@ -3,34 +3,18 @@ package Songer;
 import java.io.*;
 import java.net.URL;
 
+import Songer.TelegramBot.Bot;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-import org.telegram.telegrambots.meta.api.objects.Update;
-import org.telegram.telegrambots.meta.generics.TelegramBot;
+
 
 
 public class PostTest{
 
     public static void main(String[] args) throws IOException {
 
-        TelegramLongPollingBot bot = new TelegramLongPollingBot() {
-            @Override
-            public String getBotToken() {
-                return "5123048909:AAEQ-H9IvDWkMUU_1v9lXqMBTZir1IqxOqM";
-            }
+        Bot bot = new Bot();
+        bot.serve();
 
-            @Override
-            public void onUpdateReceived(Update update) {
-
-            }
-
-            @Override
-            public String getBotUsername() {
-                return null;
-            }
-        };
-        Update update = new Update();
-        bot.onUpdateReceived(update);
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         StopPlayer player = context.getBean("stopPlayer",StopPlayer.class);
