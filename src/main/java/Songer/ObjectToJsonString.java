@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 
 public class ObjectToJsonString {
-    public String makeJsonString(Object obj){
+    public  String makeJsonString(Object obj){
         Gson gson = new Gson();
 
         String strJson = gson.toJson(obj);

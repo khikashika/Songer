@@ -1,4 +1,4 @@
-package Songer.TelegramBot;
+package Songer;
 
 
 import Songer.ObjectToJsonString;
@@ -44,7 +44,7 @@ public class Bot{
             long chatId = message.chat().id();
             if (message.text().equals("stop")){
                     StopPlayer stopPlayer = new StopPlayer();
-                    String url = ("http://kodi:123@127.0.0.1:8081/jsonrpc");
+                    String url = (System.getenv("KODI_URL"));
                     String obj = new ObjectToJsonString().makeJsonString(stopPlayer);
                     PostRequestUnirest uni = new PostRequestUnirest();
                     uni.uniPost(url,obj);
