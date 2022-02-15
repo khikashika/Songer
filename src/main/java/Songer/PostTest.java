@@ -1,19 +1,23 @@
 package Songer;
 
 import java.io.*;
-import java.net.URL;
 
-import Songer.SongController.SongController;
+import Songer.Trash.Bot;
+import lombok.SneakyThrows;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 
 public class PostTest{
-
+    @SneakyThrows
     public static void main(String[] args) throws IOException {
 
-        Bot bot = new Bot();
-        bot.serve();
+//        Bot bot = new Bot();
+//        bot.serve();
+
+        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
+        botsApi.registerBot(new TelegramBot());
 
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -31,8 +35,8 @@ public class PostTest{
         //JsonNode jsonNode = new JsonNode(obj);
         String str = uniPost.uniPost(System.getenv("KODI_URL"),obj);
         System.out.println(str);
-        SongController controller = new SongController("hello");
-        controller.getSongsLibrary();
+//        SongController controller = new SongController("hello");
+//        controller.getSongsLibrary();
 
 
 
