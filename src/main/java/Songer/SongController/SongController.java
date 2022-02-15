@@ -9,7 +9,9 @@ import Songer.RPCObjects.Song;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import lombok.SneakyThrows;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.*;
@@ -27,7 +29,7 @@ public class SongController {
 //    public int getSongId(String songName){
 //        //find song id in kodi library
 //    }
-
+@SneakyThrows
     public ArrayList getSongsLibrary(){
 
         //Getting library from kodi//
@@ -46,25 +48,25 @@ public class SongController {
         JSONObject json = new JSONObject(response);
         JSONObject result = new JSONObject(json.get("result").toString());
         String artistStr =strMaker(result.get("artists").toString());
-        System.out.println( artistStr);
+        //System.out.println( artistStr);
         ArrayList<String> rawArtists = new ArrayList<String>(Arrays.asList(artistStr.split(";")));
-        System.out.println(rawArtists.get(1));
+        //System.out.println(rawArtists.get(1));
         ArrayList<Artist> artists = new ArrayList<>();
 
         for (int i = 0; i < rawArtists.size(); i++) {
-            System.out.println("Raw artists size = "+rawArtists.size()+" Step = "+i);
+            //System.out.println("Raw artists size = "+rawArtists.size()+" Step = "+i);
             HashMap map = new HashMap();
             //System.out.println(rawArtists.get(i));
             String[] sub = rawArtists.get(i).split(",");
             for (int j = 0; j < sub.length; j++) {
 
-                System.out.println("Sub lenght = "+sub.length);
+                //System.out.println("Sub lenght = "+sub.length);
                 String[] sub2 = sub[j].split(":");
-                    System.out.println("Sub2 lenght="+sub2.length);
-                    System.out.println("sub2[0] = "+ sub2[0]+" sub2[1]= "+sub2[1]);
+                    //System.out.println("Sub2 lenght="+sub2.length);
+                    //System.out.println("sub2[0] = "+ sub2[0]+" sub2[1]= "+sub2[1]);
                     map.put(sub2[0], sub2[1]);
-                    System.out.println("Printing map");
-                    System.out.println(map);
+                    //System.out.println("Printing map");
+                    //System.out.println(map);
             }
 
             artists.add(new Artist(Integer.parseInt( map.get("artistid").toString()), map.get("artist").toString(), map.get("label").toString()));
@@ -85,28 +87,35 @@ public class SongController {
             getLibrary = new RpcFather(1,"AudioLibrary.GetSongs",params);
             jsonString = obj.makeJsonString(getLibrary);
             response = requestUnirest.uniPost(System.getenv("KODI_URL"),jsonString);
-            System.out.println(response);
+            System.out.println("Artist = "+item.getArtist());
+            System.out.println("Response songs by Artist = "+response);
             json = new JSONObject(response);
             result= json.getJSONObject("result");
-            String rawSongStr = result.get("songs").toString();
-            strMaker(rawSongStr);
-            ArrayList<String> rawSongs  = new ArrayList<String>(Arrays.asList(rawSongStr.split("},")));
-            ArrayList<Song> songsOfArtist = new ArrayList<Song>();
+            try {
+                String rawSongStr = result.get("songs").toString();
+                strMaker(rawSongStr);
+                ArrayList<String> rawSongs = new ArrayList<String>(Arrays.asList(rawSongStr.split("},")));
+                ArrayList<Song> songsOfArtist = new ArrayList<Song>();
 
-            for(int i=0 ; i<rawSongs.size(); i++)   {
-                String[] sub = rawSongs.get(i).split(",");
-                Map<String,String> map = new HashMap<>();
-                for (String subs:sub) {
-                    subs=strMaker(subs);
-                    String[] sub2 = subs.split(":"); //
-                    map.put(sub2[0],sub2[1]);
+                for (int i = 0; i < rawSongs.size(); i++) {
+                    String[] sub = rawSongs.get(i).split(",");
+                    Map<String, String> map = new HashMap<>();
+                    for (String subs : sub) {
+                        subs = strMaker(subs);
+                        String[] sub2 = subs.split(":"); //
+                        map.put(sub2[0], sub2[1]);
+                    }
+                    songsOfArtist.add(new Song(map.get("label").toString(), Integer.parseInt(map.get("songid").toString())));
+
                 }
-                songsOfArtist.add(new Song(map.get("label").toString(),Integer.parseInt(map.get("songid").toString())));
 
+                item.setSongsOfArtist(songsOfArtist);
+                System.out.println(item);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
             }
-
-            item.setSongsOfArtist(songsOfArtist);
-            System.out.println(item);
         }
 
 

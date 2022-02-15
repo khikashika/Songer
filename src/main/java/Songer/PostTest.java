@@ -2,7 +2,7 @@ package Songer;
 
 import java.io.*;
 
-import Songer.Trash.Bot;
+import Songer.SongController.SongController;
 import lombok.SneakyThrows;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
@@ -28,15 +28,15 @@ public class PostTest{
         //URL url =  new URL("http://kodi:123@127.0.0.1:8081/jsonrpc");
        // URL url =  new URL("http://kodi:123@192.168.1.205:8080/jsonrpc");
         //StopPlayer player = new StopPlayer();
-        String obj = new ObjectToJsonString().makeJsonString(player);
+//        String obj = new ObjectToJsonString().makeJsonString(player);
         //String response= post.post("http://kodi:123@192.168.1.205:8080/jsonrpc",stopPlayer.toString());
       //  System.out.println(response);
-        PostRequestUnirest uniPost = context.getBean("uniPost",PostRequestUnirest.class);
+//        PostRequestUnirest uniPost = context.getBean("uniPost",PostRequestUnirest.class);
         //JsonNode jsonNode = new JsonNode(obj);
-        String str = uniPost.uniPost(System.getenv("KODI_URL"),obj);
-        System.out.println(str);
-//        SongController controller = new SongController("hello");
-//        controller.getSongsLibrary();
+//        String str = uniPost.uniPost(System.getenv("KODI_URL"),obj);
+//        System.out.println(str);
+       //SongController controller = new SongController();
+       //controller.getSongsLibrary();
 
 
 
