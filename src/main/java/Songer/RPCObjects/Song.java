@@ -1,12 +1,13 @@
 package Songer.RPCObjects;
 
+import lombok.Data;
+
 public class Song {
    private String label;
    private int id;
    private String artist;
 
-
-    public Song(String label, int id) {
+   public Song(String label, int id) {
         this.label = label;
         this.id = id;
     }

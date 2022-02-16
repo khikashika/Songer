@@ -1,7 +1,11 @@
 package Songer;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
+import Songer.RPCObjects.Artist;
 import Songer.SongController.SongController;
 import lombok.SneakyThrows;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,8 +20,8 @@ public class PostTest{
 //        Bot bot = new Bot();
 //        bot.serve();
 
-        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-        botsApi.registerBot(new TelegramBot());
+//        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
+//        botsApi.registerBot(new TelegramBot());
 
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -35,8 +39,12 @@ public class PostTest{
         //JsonNode jsonNode = new JsonNode(obj);
 //        String str = uniPost.uniPost(System.getenv("KODI_URL"),obj);
 //        System.out.println(str);
-       //SongController controller = new SongController();
-       //controller.getSongsLibrary();
+       SongController controller = new SongController();
+        ArrayList<Artist> artists = controller.getSongsLibrary();
+        System.out.println(controller.whatPlaying());
+
+
+
 
 
 

@@ -21,15 +21,38 @@ import java.util.*;
 public class SongController {
     private String songName;
 
-//    public SongController(String songName){
-//        songName = this.songName;
-//
-//    }
+    public String playSong(Integer songId){
+        HashMap<Object,Object> item = new HashMap<>();
+        item.put("songid",songId);
+        HashMap<String,HashMap> params = new HashMap();
+        params.put("item",item);
+        RpcFather playSong = new RpcFather(1,"Player.Open",params);
+        ObjectToJsonString obj = new ObjectToJsonString();
+        String jsonString = obj.makeJsonString(playSong);
+        PostRequestUnirest requestUnirest = new PostRequestUnirest();
+        String response = requestUnirest.uniPost(System.getenv("KODI_URL"),jsonString);
+        System.out.println(response);
+        return response;
 
-//    public int getSongId(String songName){
-//        //find song id in kodi library
-//    }
-@SneakyThrows
+    }
+
+    public String whatPlaying(){
+        HashMap params = new HashMap();
+        params.put("playerid",0);
+        RpcFather whatPlaying =new RpcFather(1,"Player.GetItem",params);
+        ObjectToJsonString obj = new ObjectToJsonString();
+        String jsonString = obj.makeJsonString(whatPlaying);
+        PostRequestUnirest requestUnirest = new PostRequestUnirest();
+        String response = requestUnirest.uniPost(System.getenv("KODI_URL"),jsonString);
+//        System.out.println(response);
+        JSONObject json = new JSONObject(response);
+        JSONObject result = new JSONObject(json.get("result").toString());
+        JSONObject item = new JSONObject(result.get(item))
+        return response;
+    }
+
+
+    @SneakyThrows
     public ArrayList getSongsLibrary(){
 
         //Getting library from kodi//
