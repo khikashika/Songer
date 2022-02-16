@@ -40,7 +40,23 @@ public class Search {
     }
 
     public String whatPlaying(){
-        String whatsplaing = songController.whatPlaying();
-        return whatsplaing;
+        String whatplaing = songController.whatPlaying();
+        System.out.println("whatsplaing in search = "+whatplaing);
+        if(whatplaing.equals("Ничего не играет")){
+            return whatplaing;
+        }
+        for(Artist artist:artists){
+            if(artist.getSongsOfArtist()!=null){
+            for(Song song:artist.getSongsOfArtist()){
+                if(song.getId()==(Integer.parseInt(whatplaing))) {
+                    String str = artist.getLabel().toString()+ " - "+ song.getLabel();
+                    System.out.println("Find " + str);
+                    return str;
+                }
+                }
+            }
+        }
+        return whatplaing;
+
     }
 }

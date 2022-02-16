@@ -6,6 +6,7 @@ import Songer.SongController.SongController;
 import lombok.SneakyThrows;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.updatingmessages.DeleteMessage;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.MessageEntity;
@@ -111,6 +112,8 @@ public class TelegramBot extends TelegramLongPollingBot {
                     .chatId(message.getChatId().toString())
                     .text(whatPlaing)
                     .build());
+            DeleteMessage deletemessage = new DeleteMessage(message.getChatId().toString(),message.getMessageId());
+            execute(deletemessage);
         }
 
     }
@@ -235,5 +238,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         .replyMarkup(InlineKeyboardMarkup.builder().keyboard(buttons).build())
         .build()
         );
+//        DeleteMessage deletemessage = new DeleteMessage(message.getChatId().toString(),message.getMessageId());
+//        execute(deletemessage);
     }
 }

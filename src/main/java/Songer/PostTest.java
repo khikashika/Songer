@@ -39,7 +39,7 @@ public class PostTest{
         //JsonNode jsonNode = new JsonNode(obj);
 //        String str = uniPost.uniPost(System.getenv("KODI_URL"),obj);
 //        System.out.println(str);
-//       SongController controller = new SongController();
+//        SongController controller = new SongController();
 //        ArrayList<Artist> artists = controller.getSongsLibrary();
 //        System.out.println(controller.whatPlaying());
 

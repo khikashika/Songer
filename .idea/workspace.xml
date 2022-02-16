@@ -19,7 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25c8b95f-dcdf-45ff-9c95-924c0edf961e" name="Default Changelist" comment="library song getting" />
+    <list default="true" id="aa82c848-5113-4bd4-9cc2-a623e27a0ece" name="Default Changelist" comment="Song Library">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Songer/PostRequestUnirest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/PostRequestUnirest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Songer/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/PostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Songer/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Songer/SongController/SongController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/SongController/SongController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Songer/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/TelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Songer.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/KodiObj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/ObjectToJsonString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/PostRequestUnirest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/PostTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/Artist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/KodiJsonResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/RpcFather$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/RpcFather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/Song.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/SongController/SongController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/StopPlayer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/StopPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,13 +68,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RunManager">
     <configuration name="PostTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="BOT_TOKEN" value="5123048909:AAEQ-H9IvDWkMUU_1v9lXqMBTZir1IqxOqM" />
-        <env name="KODI_URL" value="http://kodi:123@127.0.0.1:8081/jsonrpc" />
+        <env name="KODI_URL" value="http://kodi:123@192.168.1.205:8080/jsonrpc" />
         <env name="BOT_USERNAME" value="@Songer_kodi_bot" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="Songer.PostTest" />
@@ -103,21 +125,7 @@
       <option name="project" value="LOCAL" />
       <updated>1644868344247</updated>
     </task>
-    <task id="LOCAL-00003" summary="hello moto">
-      <created>1645011411815</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1645011411815</updated>
-    </task>
-    <task id="LOCAL-00004" summary="whatspling button">
-      <created>1645022715256</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1645022715256</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,29 +147,23 @@
     <MESSAGE value="Spring and bot" />
     <MESSAGE value="Spring and bot 0.1" />
     <MESSAGE value="Artist library" />
-    <MESSAGE value="hello moto" />
-    <MESSAGE value="whatspling button" />
-    <option name="LAST_COMMIT_MESSAGE" value="whatspling button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Artist library" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="343" key="#Custom_Plugin_Repositories" timestamp="1644859399019">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="568" y="343" key="#Custom_Plugin_Repositories/0.0.1440.900@0.0.1440.900" timestamp="1644859399019" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1644995695161">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="311" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1644955777735">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="311" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1644955777735" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644995695161" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644849641207" />
     <state x="574" y="197" key="#com.intellij.ide.util.MemberChooser" timestamp="1644857526493">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="574" y="197" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1644857526493" />
     <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644842033787" />
-    <state x="747" y="337" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1644996938781">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="747" y="337" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644996938781" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1643622290634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -171,50 +173,50 @@
     </state>
     <state x="627" y="237" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1644955757734" />
     <state x="836" y="274" key="EnvironmentVariablesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644830601925" />
-    <state width="1706" height="282" key="GridCell.Tab.0.bottom" timestamp="1645022636511">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1645042379272">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1644958712526" />
-    <state width="1706" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645022636511" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1645042379272" />
+    <state width="1879" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644845327791" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1644857660577" />
-    <state width="1706" height="282" key="GridCell.Tab.0.center" timestamp="1645022636511">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1645042379271">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1644958712525" />
-    <state width="1706" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645022636511" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1645042379271" />
+    <state width="1879" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644845327791" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1644857660576" />
-    <state width="1706" height="282" key="GridCell.Tab.0.left" timestamp="1645022636511">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1645042379270">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1644958712524" />
-    <state width="1706" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645022636511" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1645042379270" />
+    <state width="1879" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644845327791" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1644857660575" />
-    <state width="1706" height="282" key="GridCell.Tab.0.right" timestamp="1645022636511">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1645042379271">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1644958712525" />
-    <state width="1706" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645022636511" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1645042379271" />
+    <state width="1879" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644845327791" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1644857660577" />
-    <state width="939" height="348" key="GridCell.Tab.1.bottom" timestamp="1645009848051">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1645033316867">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1644868281852" />
-    <state width="939" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645009848051" />
-    <state width="939" height="348" key="GridCell.Tab.1.center" timestamp="1645009848050">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1645033316867" />
+    <state width="1879" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644842751269" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1645033316866">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1644868281851" />
-    <state width="939" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645009848050" />
-    <state width="939" height="348" key="GridCell.Tab.1.left" timestamp="1645009848050">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1645033316866" />
+    <state width="1879" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644842751269" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1645033316866">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1644868281850" />
-    <state width="939" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645009848050" />
-    <state width="939" height="348" key="GridCell.Tab.1.right" timestamp="1645009848051">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1645033316866" />
+    <state width="1879" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644842751269" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1645033316867">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1644868281851" />
-    <state width="939" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645009848051" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1645033316867" />
+    <state width="1879" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644842751269" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1643638901328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -227,28 +229,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="437" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643622379520" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1645022716606">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="414" y="219" key="Vcs.Push.Dialog.v2" timestamp="1644868349581">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="414" y="219" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1644868349581" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645022716606" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643725655191" />
     <state x="587" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1644948615539">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="587" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1644948615539" />
     <state x="782" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643622388902" />
-    <state x="690" y="288" key="extract.method.dialog" timestamp="1644996972282">
+    <state x="458" y="198" key="extract.method.dialog" timestamp="1645042013119">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="198" key="extract.method.dialog/0.0.1440.900@0.0.1440.900" timestamp="1645042013119" />
+    <state x="704" y="311" key="git4idea.merge.GitPullDialog" timestamp="1643622268993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="288" key="extract.method.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644996972282" />
-    <state x="704" y="311" key="git4idea.merge.GitPullDialog" timestamp="1644995399937">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="704" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644995399937" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1645000761584">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645000761584" />
+    <state x="704" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643622268993" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1644833164764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -261,6 +259,26 @@
           <url>jar://$MAVEN_REPOSITORY$/com/github/pengrad/java-telegram-bot-api/5.7.0/java-telegram-bot-api-5.7.0.jar!/com/pengrad/telegrambot/model/Update.class</url>
           <line>32</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Songer/SongController/SongController.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Songer/SongController/SongController.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Songer/Search.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots/5.7.1/telegrambots-5.7.1.jar!/org/telegram/telegrambots/updatesreceivers/DefaultBotSession.class</url>
+          <line>156</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

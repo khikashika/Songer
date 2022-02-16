@@ -11,8 +11,9 @@ import org.springframework.stereotype.Component;
 @Component("uniPost")
 public class PostRequestUnirest {
 
-    public String uniPost(String url, String jsonString){
+    public String uniPost(String jsonString){
         try {
+            String url = System.getenv("KODI_URL");
             System.out.println("Connecting to kodi server");
             HttpResponse  response = Unirest.post(url)
                     .header("Content-Type","application/json")
