@@ -105,6 +105,14 @@ public class TelegramBot extends TelegramLongPollingBot {
             chatStatus.setChatStatus(message.getChatId().toString(),0);
         }
 
+        if(data.equals("whatPlaying")){
+            String whatPlaing = search.whatPlaying();
+            execute(SendMessage.builder()
+                    .chatId(message.getChatId().toString())
+                    .text(whatPlaing)
+                    .build());
+        }
+
     }
 
 

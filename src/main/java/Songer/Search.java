@@ -40,6 +40,7 @@ public class Search {
     }
 
     public String whatPlaying(){
-        return null;
+        String whatsplaing = songController.whatPlaying();
+        return whatsplaing;
     }
 }

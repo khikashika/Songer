@@ -20,19 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25c8b95f-dcdf-45ff-9c95-924c0edf961e" name="Default Changelist" comment="library song getting">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Songer/ChatStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Songer/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_02_2022__15_56__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_02_2022__15_56__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_01_2022__23_24__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_01_2022__23_24__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_01_2022_12_45__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_01_2022_12_45__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Songer/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/PostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Songer/RPCObjects/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/RPCObjects/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Songer/SongController/SongController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/SongController/SongController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Songer/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/PostTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Songer/PostTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/Song.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/Song.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/SongController/SongController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Songer/SongController/SongController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Songer/SongController/SongController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644868344247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hello moto">
+      <created>1645011411815</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645011411815</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +137,8 @@
     <MESSAGE value="Spring and bot" />
     <MESSAGE value="Spring and bot 0.1" />
     <MESSAGE value="Artist library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Artist library" />
+    <MESSAGE value="hello moto" />
+    <option name="LAST_COMMIT_MESSAGE" value="hello moto" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="343" key="#Custom_Plugin_Repositories" timestamp="1644859399019">
@@ -169,29 +168,29 @@
     </state>
     <state x="627" y="237" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1644955757734" />
     <state x="836" y="274" key="EnvironmentVariablesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644830601925" />
-    <state width="1708" height="282" key="GridCell.Tab.0.bottom" timestamp="1645011009997">
+    <state width="1706" height="282" key="GridCell.Tab.0.bottom" timestamp="1645022359465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1644958712526" />
-    <state width="1708" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645011009997" />
+    <state width="1706" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645022359465" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1644857660577" />
-    <state width="1708" height="282" key="GridCell.Tab.0.center" timestamp="1645011009997">
+    <state width="1706" height="282" key="GridCell.Tab.0.center" timestamp="1645022359465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1644958712525" />
-    <state width="1708" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645011009997" />
+    <state width="1706" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645022359465" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1644857660576" />
-    <state width="1708" height="282" key="GridCell.Tab.0.left" timestamp="1645011009997">
+    <state width="1706" height="282" key="GridCell.Tab.0.left" timestamp="1645022359465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1644958712524" />
-    <state width="1708" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645011009997" />
+    <state width="1706" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645022359465" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1644857660575" />
-    <state width="1708" height="282" key="GridCell.Tab.0.right" timestamp="1645011009997">
+    <state width="1706" height="282" key="GridCell.Tab.0.right" timestamp="1645022359465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1644958712525" />
-    <state width="1708" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645011009997" />
+    <state width="1706" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645022359465" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1644857660577" />
     <state width="939" height="348" key="GridCell.Tab.1.bottom" timestamp="1645009848051">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -225,11 +224,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="437" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643622379520" />
-    <state x="414" y="219" key="Vcs.Push.Dialog.v2" timestamp="1644868349581">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1645021597470">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="219" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1644868349581" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643725655191" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1645021597470" />
     <state x="587" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1644948615539">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

@@ -47,8 +47,9 @@ public class SongController {
 //        System.out.println(response);
         JSONObject json = new JSONObject(response);
         JSONObject result = new JSONObject(json.get("result").toString());
-        JSONObject item = new JSONObject(result.get(item))
-        return response;
+        String item =  result.get("item").toString();
+        System.out.println("item ="+ item);
+        return item;
     }
 
 
