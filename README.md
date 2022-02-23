@@ -1,14 +1,14 @@
 # Songer
 
-##KODI SONGER TELEGRAM BOT
+## KODI SONGER TELEGRAM BOT
 
 This project to control kodi player via telegram bot. For bars lounges e.t.c
 
 
-Stack:
-Extended Telegramm Long Polling Bot
-KODI Version 19.1
-JSON RPC 2.0
+## Stack:
+-Telegramm Long Polling Bot
+-KODI Version 19.1
+-JSON RPC 2.0
   
 Need to local env.variables (in IntelijIdea Edit configerstions):
 
@@ -18,7 +18,7 @@ Need to local env.variables (in IntelijIdea Edit configerstions):
 
 
 
-Features:
+## Features:
 - Create Library of all songs in kodi
 
 - Search songs by Artist
