@@ -4,6 +4,7 @@ import lombok.Data;
 
 public class Song {
    private String label;
+
    private int id;
    private String artist;
 

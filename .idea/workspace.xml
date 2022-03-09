@@ -20,26 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa82c848-5113-4bd4-9cc2-a623e27a0ece" name="Default Changelist" comment="Song Library">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_02_2022,_15_56_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_02_2022__15_56__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Songer/PostRequestUnirest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/PostRequestUnirest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Songer/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/PostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Songer/RPCObjects/KodiJsonResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/RPCObjects/KodiJsonResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Songer/RPCObjects/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/RPCObjects/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Songer/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/Search.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Songer/SongController/SongController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/SongController/SongController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Songer/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Songer/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Songer.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/KodiObj.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/ObjectToJsonString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/PostRequestUnirest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/PostTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/Artist.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/KodiJsonResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/RpcFather$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/RpcFather.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/RPCObjects/Song.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/SongController/SongController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/StopPlayer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Songer/StopPlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +99,7 @@
       <workItem from="1643622232089" duration="8555000" />
       <workItem from="1644313385998" duration="9544000" />
       <workItem from="1644859467994" duration="12607000" />
+      <workItem from="1646851840030" duration="3369000" />
     </task>
     <task id="LOCAL-00001" summary="Spring and bot">
       <created>1643725637679</created>
@@ -125,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644868344247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-Created handler of whatisplaying now&#10;-refactor Song controller&#10;-begin create method who insert song in playlist to play it next">
+      <created>1645044970319</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645044970319</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,17 +144,18 @@
     <MESSAGE value="Spring and bot" />
     <MESSAGE value="Spring and bot 0.1" />
     <MESSAGE value="Artist library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Artist library" />
+    <MESSAGE value="-Created handler of whatisplaying now&#10;-refactor Song controller&#10;-begin create method who insert song in playlist to play it next" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Created handler of whatisplaying now&#10;-refactor Song controller&#10;-begin create method who insert song in playlist to play it next" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="343" key="#Custom_Plugin_Repositories" timestamp="1644859399019">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="568" y="343" key="#Custom_Plugin_Repositories/0.0.1440.900@0.0.1440.900" timestamp="1644859399019" />
-    <state x="311" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1644955777735">
+    <state x="311" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1646853499031">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="311" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1644955777735" />
+    <state x="311" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1646853499031" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644849641207" />
     <state x="574" y="197" key="#com.intellij.ide.util.MemberChooser" timestamp="1644857526493">
       <screen x="0" y="0" width="1440" height="900" />
@@ -173,50 +171,54 @@
     </state>
     <state x="627" y="237" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1644955757734" />
     <state x="836" y="274" key="EnvironmentVariablesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644830601925" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1645042379272">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1646858521980">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1645042379272" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1646858521980" />
     <state width="1879" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644845327791" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1644857660577" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1645042379271">
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1645909416662" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1646858521979">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1645042379271" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1646858521979" />
     <state width="1879" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644845327791" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1644857660576" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1645042379270">
+    <state width="1398" height="304" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1645909416661" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1646858521978">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1645042379270" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1646858521978" />
     <state width="1879" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644845327791" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1644857660575" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1645042379271">
+    <state width="1398" height="304" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1645909416661" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1646858521979">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1645042379271" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1646858521979" />
     <state width="1879" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644845327791" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1644857660577" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1645033316867">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="304" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1645909416662" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1645909416665">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1645033316867" />
     <state width="1879" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644842751269" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1645033316866">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1645909416665" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1645909416664">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1645033316866" />
     <state width="1879" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644842751269" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1645033316866">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1645909416664" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1645909416663">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1645033316866" />
     <state width="1879" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644842751269" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1645033316867">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1645909416663" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1645909416664">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1645033316867" />
     <state width="1879" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644842751269" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1645909416664" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1643638901328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -229,15 +231,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="437" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643622379520" />
-    <state x="414" y="219" key="Vcs.Push.Dialog.v2" timestamp="1644868349581">
+    <state x="414" y="219" key="Vcs.Push.Dialog.v2" timestamp="1645044973618">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="414" y="219" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1644868349581" />
+    <state x="414" y="219" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1645044973618" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643725655191" />
-    <state x="587" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1644948615539">
+    <state x="587" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1645555141753">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="587" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1644948615539" />
+    <state x="587" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1645555141753" />
     <state x="782" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643622388902" />
     <state x="458" y="198" key="extract.method.dialog" timestamp="1645042013119">
       <screen x="0" y="0" width="1440" height="900" />
@@ -262,17 +264,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Songer/SongController/SongController.java</url>
-          <line>79</line>
+          <line>81</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Songer/SongController/SongController.java</url>
-          <line>72</line>
+          <line>74</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Songer/Search.java</url>
-          <line>44</line>
+          <line>45</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

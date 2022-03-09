@@ -4,6 +4,7 @@ import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 import kong.unirest.UnirestException;
+import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.conn.HttpHostConnectException;
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
@@ -27,8 +28,12 @@ public class PostRequestUnirest {
             e.printStackTrace();
             return ("Connecting to KODI Error");
         }
+//        catch(ConnectTimeoutException e){
+//            e.printStackTrace();
+//            return ("Connection timeout");
+        }
 
-    }}
+    }
 
 //    Unirest unirest
 // Unirest.setTimeouts(0, 0);

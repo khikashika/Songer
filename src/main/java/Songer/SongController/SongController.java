@@ -6,6 +6,8 @@ import Songer.RPCObjects.Artist;
 import Songer.RPCObjects.KodiJsonResponse;
 import Songer.RPCObjects.RpcFather;
 import Songer.RPCObjects.Song;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -81,6 +83,27 @@ public class SongController {
 
         return whatPlayingMap.get("id").toString();
         }
+
+    }
+
+    public String PlaylistPostion(){
+        List properties = new ArrayList();
+        properties.add("position");
+        HashMap <Object, Object> params = new HashMap();
+        params.put("playerid",0);
+        params.put("properties",properties);
+        String response = getFromKodi("Player.GetProperties",params);
+        ObjectMapper mapper = new ObjectMapper();
+        KodiJsonResponse kodiJsonResponse = new KodiJsonResponse();
+        try{
+         kodiJsonResponse = mapper.readValue(response,KodiJsonResponse.class);}
+        catch(JsonProcessingException e){
+            System.out.println("Cant deserialize json");
+            return "null";
+        }
+        System.out.println(kodiJsonResponse.getResult().get("position"));
+
+        return response;
 
     }
 
