@@ -125,20 +125,14 @@ public class SongController {
         KodiRequest kodiRequest = new KodiRequestBuilder()
                 .method("Playlist.Insert")
                 .params("playlistid",0)
-                .params("position",position)
+                .params("position",position+1)
                 .params("item",item)
                 .build();
 
         response=getFromKodi2(kodiRequest);
         System.out.println(response);
-        KodiJsonResponse kodiJsonResponse = new KodiJsonResponse();
-        try {
-            kodiJsonResponse = mapper.readValue(response, KodiJsonResponse.class);
-        } catch (JsonProcessingException e) {
-            System.out.println("Cant deserialize json");
-            return "error";
-        }
-        if (kodiJsonResponse.getResult().equals("OK")) {
+
+        if (response.contains("OK")) {
 
             return "OK";
         }
