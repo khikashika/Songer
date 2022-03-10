@@ -58,6 +58,8 @@ public class TelegramBot extends TelegramLongPollingBot {
     private void handleCallbackQuery(CallbackQuery callbackQuery) throws TelegramApiException {
         Message message = callbackQuery.getMessage();
         String data = callbackQuery.getData();
+        String serviceSubString = data.substring(0,4);
+        System.out.println("Service sub = "+serviceSubString);
         System.out.println(data);
 
         //CallBackFindByArtist
@@ -71,9 +73,9 @@ public class TelegramBot extends TelegramLongPollingBot {
         }
 
         //Searching Songs of artist
-        if(chatStatus.getChatStatus(message.getChatId().toString()) == 2){
+        if(chatStatus.getChatStatus(message.getChatId().toString()) == 2 && serviceSubString.equals("aRSe")){
             System.out.println("searching song");
-          List<Song> searchResult = search.searchSongsByArtist(data);
+          List<Song> searchResult = search.searchSongsByArtist(data.substring(4));//remove service substring
             System.out.println(searchResult);
           if(searchResult.size()!=0){
 
@@ -84,28 +86,53 @@ public class TelegramBot extends TelegramLongPollingBot {
                           Arrays.asList(
                                   InlineKeyboardButton.builder()
                                           .text(song.getLabel())
-                                          .callbackData(Integer.toString(song.getId()))
+                                          .callbackData("sOSe"+Integer.toString(song.getId()))
                                           .build()
                           )
 
 
                   );
               }
+              buttons.add(Arrays.asList(InlineKeyboardButton.builder()
+                      .text("-Меню-")
+                      .callbackData("menu")
+                      .build()));
+
               execute(SendMessage.builder()
                       .chatId(message.getChatId().toString())
                       .text("Выберите песню")
                       .replyMarkup(InlineKeyboardMarkup.builder().keyboard(buttons).build())
                       .build()
+
               );
               chatStatus.setChatStatus(message.getChatId().toString(),3);
           }
         }
 
-        if(chatStatus.getChatStatus(message.getChatId().toString())==3){
-            search.playSong(data);
-            chatStatus.setChatStatus(message.getChatId().toString(),0);
+        //PlaySong Next
+        if(chatStatus.getChatStatus(message.getChatId().toString())==3 && serviceSubString.equals("sOSe")){
+
+            String result = search.playSong(data.substring(4));
+            if(result.equals("OK")){
+                chatStatus.setChatStatus(message.getChatId().toString(),0);
+                execute(SendMessage.builder()
+                .chatId(message.getChatId().toString())
+                .text("Песня заиграет следующей")
+                .build());
+                getMainMenu(message);
+            }
+            else {
+                chatStatus.setChatStatus(message.getChatId().toString(),0);
+                execute(SendMessage.builder()
+                        .chatId(message.getChatId().toString())
+                        .text("Что то пошло не так")
+                        .build());
+                getMainMenu(message);
+
+            }
         }
 
+        //whats playing
         if(data.equals("whatPlaying")){
             String whatPlaing = search.whatPlaying();
             execute(SendMessage.builder()
@@ -118,13 +145,19 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         }
 
+        //back to menu
+        if(data.equals("menu")){
+            chatStatus.setChatStatus(message.getChatId().toString(),0);
+            getMainMenu(message);
+        }
+
     }
 
 
 
     private void handleMessage(Message message) throws TelegramApiException {
 
-        //Handle search string if before callback is searchByArtist
+        //Search Artists
         if (message.hasText() && chatStatus.getChatStatus(message.getChatId().toString()) == 1) {
             String searchSubString;
             String searchString = message.getText().trim();
@@ -141,13 +174,16 @@ public class TelegramBot extends TelegramLongPollingBot {
                             Arrays.asList(
                                     InlineKeyboardButton.builder()
                                             .text(artist.getLabel())
-                                            .callbackData(artist.getLabel())
-                                            .build()
-                            )
+                                            .callbackData("aRSe"+artist.getLabel())//service substring to reach callback
+                                            .build()));
 
-
-                    );
                 }
+                buttons.add(Arrays.asList(InlineKeyboardButton.builder()
+                        .text("-Меню-")
+                        .callbackData("menu")
+                        .build()));
+
+
                 execute(SendMessage.builder()
                         .chatId(message.getChatId().toString())
                         .text("Выберите исполнителя")
@@ -159,52 +195,19 @@ public class TelegramBot extends TelegramLongPollingBot {
             else {
                 execute(SendMessage.builder()
                 .chatId(message.getChatId().toString())
-                .text("Не нашлось, попробуйте еще")
+                .text("Не нашлось, попробуйте еще или перейдите в главное меню")
                 .build()
 
                 );
+                getMainMenu(message);
+
             }
         }
 
-
-
-//        if(message.hasText() && message.hasEntities()) {
-//            System.out.println("========================="+message.getEntities());
-//           Optional<MessageEntity> comandEntity = message.getEntities().stream().filter(e->"bot_command".equals(e.getType())).findFirst();
-//           if(comandEntity.isPresent()){
-//
-//               String command = message.getText().substring(comandEntity.get().getOffset(),comandEntity.get().getLength());
-//               System.out.println("========================"+command);
-//
-//               if(command.equals("/findbyartist")){
-//                   System.out.println("begin command handle");
-//                       List<List<InlineKeyboardButton>> buttons = new ArrayList<List<InlineKeyboardButton>>();
-//                       for(Artist artist : artists){
-//                           System.out.println(artist.getArtist());
-//                           buttons.add(
-//                                   Arrays.asList(
-//                                           InlineKeyboardButton.builder()
-//                                           .text(artist.getLabel())
-//                                           .callbackData(artist.getLabel())
-//                                           .build()
-//                                   )
-//
-//                           );
-//                           System.out.println("Buttons Size = "+buttons.size());
-//                       }
-//                       execute(
-//                               SendMessage.builder()
-//                               .text("Some text")
-//                               .chatId(message.getChatId().toString())
-//                               .replyMarkup(InlineKeyboardMarkup.builder().keyboard(buttons).build())
-//                               .build()
-//                       );
-//               }
-//           }
-//        }
+        //All messages
         if (chatStatus.getChatStatus(message.getChatId().toString())==0) {
-            System.out.println("chat satus");
-            System.out.println("printing Main menu");
+//            System.out.println("chat satus");
+//            System.out.println("printing Main menu");
             getMainMenu(message);
         }
     }
