@@ -8,12 +8,13 @@ import Songer.SongController.SongController;
 import lombok.SneakyThrows;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 
 public class PostTest{
-    @SneakyThrows
-    public static void main(String[] args) throws IOException {
+
+    public static void main(String[] args) throws IOException, TelegramApiException {
 
 //        Bot bot = new Bot();
 //        bot.serve();
@@ -25,7 +26,7 @@ public class PostTest{
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         StopPlayer player = context.getBean("stopPlayer",StopPlayer.class);
 
-        SongController songController = new SongController();
+//        SongController songController = new SongController();
         //songController.insertSongToPlayNext("2");
 //        songController.PlaylistPosition();
 //        songController.whatPlaying();
