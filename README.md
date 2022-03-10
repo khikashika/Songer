@@ -21,8 +21,8 @@ This project to control kodi player via telegram bot. For bars lounges e.t.c
 - What Is Playing Now
 
 ### Run
-Need to local env.variables (in IntelijIdea Edit configerstions):
+Need to local env.variables (in intelliJ IDEA Edit configurations):
 
  - BOT_TOKEN=Your bot token taken in botFather;
- - KODI_URL=http://username:pass@127.0.0.1:8080/jsonrpc; //(in system settings switch on - allow  to control kodi)
+ - KODI_URL=http://username:pass@127.0.0.1:8080/jsonrpc; //(in system settings of kodi switch on - allow  to control kodi)
  - BOT_USERNAME=@Name_Of_your_bot
