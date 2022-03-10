@@ -35,7 +35,7 @@ public class Search {
 
     public String playSong(String data){
         int songId = Integer.parseInt(data);
-        String response = songController.playSong(songId);
+        String response = songController.insertSongToPlayNext(songId);
         return response;
     }
 

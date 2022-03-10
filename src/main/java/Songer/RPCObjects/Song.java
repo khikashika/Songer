@@ -12,6 +12,12 @@ public class Song {
         this.label = label;
         this.id = id;
     }
+    public Song(String label, int id, String artist) {
+        this.label = label;
+        this.id = id;
+        this.artist=artist;
+    }
+
 
     public String getLabel() {
         return label;

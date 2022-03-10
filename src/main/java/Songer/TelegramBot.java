@@ -114,6 +114,8 @@ public class TelegramBot extends TelegramLongPollingBot {
                     .build());
             DeleteMessage deletemessage = new DeleteMessage(message.getChatId().toString(),message.getMessageId());
             execute(deletemessage);
+            getMainMenu(message);
+
         }
 
     }
