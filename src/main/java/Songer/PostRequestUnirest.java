@@ -7,9 +7,9 @@ import kong.unirest.UnirestException;
 import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.conn.HttpHostConnectException;
 import org.json.JSONObject;
-import org.springframework.stereotype.Component;
+//import org.springframework.stereotype.Component;
 
-@Component("uniPost")
+
 public class PostRequestUnirest {
 
     public String uniPost(String jsonString){

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import Songer.RPCObjects.Artist;
 import Songer.SongController.SongController;
 import lombok.SneakyThrows;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+///**/import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
@@ -23,8 +23,8 @@ public class PostTest{
         botsApi.registerBot(new TelegramBot());
 //
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        StopPlayer player = context.getBean("stopPlayer",StopPlayer.class);
+//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        StopPlayer player = context.getBean("stopPlayer",StopPlayer.class);
 
 //        SongController songController = new SongController();
         //songController.insertSongToPlayNext("2");
