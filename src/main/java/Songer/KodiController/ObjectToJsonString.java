@@ -1,4 +1,4 @@
-package Songer;
+package Songer.KodiController;
 
 import com.google.gson.Gson;
 

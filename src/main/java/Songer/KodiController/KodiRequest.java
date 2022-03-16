@@ -1,4 +1,4 @@
-package Songer.SongController;
+package Songer.KodiController;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package Songer;
+package Songer.KodiController;
 
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;

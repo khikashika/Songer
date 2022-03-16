@@ -1,24 +1,24 @@
-package Songer;
+package Songer.Player;
 
 import Songer.RPCObjects.Artist;
 import Songer.RPCObjects.Song;
-import Songer.SongController.SongController;
+import Songer.KodiController.KodiObjectGetter;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Search {
+public class PlayerHandler {
 
-    SongController songController = new SongController();
-    ArrayList<Artist> artists = songController.getSongsLibrary();
+    KodiObjectGetter kodiObjectGetter = new KodiObjectGetter();
+    ArrayList<Artist> artists = kodiObjectGetter.getSongsLibrary();
 
     public List<Artist> searchByArtist(String searchSubString) {
         System.out.println("search substring " + searchSubString);
         List<Artist> searchResult = artists.stream()
                 .filter(artist -> (artist.getLabel().substring(0, searchSubString.length())).toLowerCase().equals(searchSubString.toLowerCase()))
                 .collect(Collectors.toList());
-        System.out.println("Search result" + searchResult);
+        System.out.println("PlayerHandler result" + searchResult);
         return searchResult;
     }
 
@@ -34,14 +34,16 @@ public class Search {
     }
 
     public String playSong(String data){
+        int position=kodiObjectGetter.PlaylistPosition();
+
         int songId = Integer.parseInt(data);
-        String response = songController.insertSongToPlayNext(songId);
+        String response = kodiObjectGetter.insertSongToPlayNext(songId,position);
         return response;
     }
 
 
     public String whatPlaying(){
-        String whatplaing = songController.whatPlaying();
+        String whatplaing = kodiObjectGetter.whatPlaying();
         System.out.println("whatsplaing in search = "+whatplaing);
         if(whatplaing.equals("Ничего не играет")){
             return whatplaing;

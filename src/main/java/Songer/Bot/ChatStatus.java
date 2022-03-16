@@ -1,4 +1,4 @@
-package Songer;
+package Songer.Bot;
 
 import java.util.HashMap;
 import java.util.Map;

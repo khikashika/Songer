@@ -1,4 +1,4 @@
-package Songer.RPCObjects;
+package Songer.KodiController;
 
 import java.util.Map;
 public class KodiJsonResponse {

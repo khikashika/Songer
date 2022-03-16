@@ -1,12 +1,10 @@
 package Songer;
 
 import java.io.*;
-import java.util.ArrayList;
 
-import Songer.RPCObjects.Artist;
-import Songer.SongController.SongController;
-import lombok.SneakyThrows;
 ///**/import org.springframework.context.support.ClassPathXmlApplicationContext;
+import Songer.Bot.TelegramBot;
+import Songer.KodiController.KodiObjectGetter;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
@@ -19,19 +17,20 @@ public class PostTest{
 //        Bot bot = new Bot();
 //        bot.serve();
 
-        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-        botsApi.registerBot(new TelegramBot());
+//        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
+//        botsApi.registerBot(new TelegramBot());
 //
 
 //        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 //        StopPlayer player = context.getBean("stopPlayer",StopPlayer.class);
 
-//        SongController songController = new SongController();
-        //songController.insertSongToPlayNext("2");
-//        songController.PlaylistPosition();
-//        songController.whatPlaying();
-        //songController.getArtists();
-//        ArrayList<Artist> artists = songController.getSongsLibrary();
+        KodiObjectGetter kodiObjectGetter = new KodiObjectGetter();
+        kodiObjectGetter.getPlayerPosition();
+        //kodiObjectGetter.insertSongToPlayNext("2");
+//        kodiObjectGetter.PlaylistPosition();
+//        kodiObjectGetter.whatPlaying();
+        //kodiObjectGetter.getArtists();
+//        ArrayList<Artist> artists = kodiObjectGetter.getSongsLibrary();
 //        for (Artist artist: artists)
 //        {
 //            System.out.println(artist);

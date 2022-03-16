@@ -1,4 +1,4 @@
-package Songer.SongController;
+package Songer.KodiController;
 
 public class KodiRequestBuilder {
     KodiRequest kodi = new KodiRequest();

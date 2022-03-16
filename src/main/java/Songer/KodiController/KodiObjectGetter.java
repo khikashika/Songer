@@ -1,20 +1,16 @@
-package Songer.SongController;
+package Songer.KodiController;
 
-import Songer.ObjectToJsonString;
-import Songer.PostRequestUnirest;
 import Songer.RPCObjects.Artist;
-import Songer.RPCObjects.KodiJsonResponse;
 import Songer.RPCObjects.RpcFather;
 import Songer.RPCObjects.Song;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import kong.unirest.UnirestException;
-import lombok.SneakyThrows;
 
 import java.util.*;
 
 
-public class SongController {
+public class KodiObjectGetter {
     private String songName;
     ObjectMapper mapper = new ObjectMapper();
 
@@ -117,9 +113,47 @@ public class SongController {
 
     }
 
-    public String insertSongToPlayNext(int songId){
+    public HashMap<String, Integer> getPlayerPosition(){
+        int duration=0;
+        double doublePercentage=0;
+        int intPercentage=0;
+        HashMap<String,Integer> songDurationAndPercentage = new HashMap<>();
+        KodiRequest kodiRequest = new KodiRequestBuilder()
+                .method("Player.GetItem")
+                .params("playerid",0)
+                .params("properties",new String[]{"duration"})
+                .build();
+
+        KodiJsonResponse kodiJsonResponse = mapResponseToObj(getFromKodi2(kodiRequest));
+        if (kodiJsonResponse.getResult().containsKey("item")){
+           HashMap<Object,Object> item = (HashMap<Object, Object>) kodiJsonResponse.getResult().get("item");
+           if(!item.get("type").equals("unknown")){
+               duration = Integer.parseInt(item.get("duration").toString());
+           }
+        }
+
+        ///get percentage
+        kodiRequest = new KodiRequestBuilder()
+                .method("Player.GetProperties")
+                .params("playerid",0)
+                .params("properties",new String[]{"cachepercentage"})
+                .build();
+        kodiJsonResponse = mapResponseToObj(getFromKodi2(kodiRequest));
+        if(Double.parseDouble(kodiJsonResponse.getResult().get("cachepercentage").toString())!=0.0){
+           doublePercentage = Double.parseDouble(kodiJsonResponse.getResult().get("cachepercentage").toString());
+           intPercentage = (int)Math.ceil(doublePercentage);
+
+
+        }
+        songDurationAndPercentage.put("duration",duration);
+        songDurationAndPercentage.put("percentage",intPercentage);
+        return songDurationAndPercentage;
+        //System.out.println(duration+"   "+doublePercentage+"  "+intPercentage);
+    }
+
+
+    public String insertSongToPlayNext(int songId,int position){
         String response;
-        int position = PlaylistPosition();
         HashMap<String,Integer> item = new HashMap<>();
         item.put("songid",songId);
         KodiRequest kodiRequest = new KodiRequestBuilder()
@@ -231,4 +265,18 @@ public class SongController {
         str = str.trim();
         return str;
     }
+
+    private KodiJsonResponse mapResponseToObj(String response){
+
+        KodiJsonResponse kodiJsonResponse = new KodiJsonResponse();
+
+        try {
+            kodiJsonResponse = mapper.readValue(response, KodiJsonResponse.class);
+        } catch (JsonProcessingException e) {
+            System.out.println("Cant deserialize json");
+            return null;
+        }
+        return kodiJsonResponse;
+    }
 }
+

@@ -1,27 +1,24 @@
-package Songer;
+package Songer.Bot;
 
+import Songer.Player.PlayerHandler;
 import Songer.RPCObjects.Artist;
 import Songer.RPCObjects.Song;
-import Songer.SongController.SongController;
 import lombok.SneakyThrows;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.DeleteMessage;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
 import org.telegram.telegrambots.meta.api.objects.Message;
-import org.telegram.telegrambots.meta.api.objects.MessageEntity;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class TelegramBot extends TelegramLongPollingBot {
 
-    Search search = new Search();
+    PlayerHandler playerHandler = new PlayerHandler();
     ChatStatus chatStatus = new ChatStatus();
 
 
@@ -75,7 +72,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         //Searching Songs of artist
         if(chatStatus.getChatStatus(message.getChatId().toString()) == 2 && serviceSubString.equals("aRSe")){
             System.out.println("searching song");
-          List<Song> searchResult = search.searchSongsByArtist(data.substring(4));//remove service substring
+          List<Song> searchResult = playerHandler.searchSongsByArtist(data.substring(4));//remove service substring
             System.out.println(searchResult);
           if(searchResult.size()!=0){
 
@@ -112,7 +109,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         //PlaySong Next
         if(chatStatus.getChatStatus(message.getChatId().toString())==3 && serviceSubString.equals("sOSe")){
 
-            String result = search.playSong(data.substring(4));
+            String result = playerHandler.playSong(data.substring(4));
             if(result.equals("OK")){
                 chatStatus.setChatStatus(message.getChatId().toString(),0);
                 execute(SendMessage.builder()
@@ -134,7 +131,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         //whats playing
         if(data.equals("whatPlaying")){
-            String whatPlaing = search.whatPlaying();
+            String whatPlaing = playerHandler.whatPlaying();
             execute(SendMessage.builder()
                     .chatId(message.getChatId().toString())
                     .text(whatPlaing)
@@ -157,14 +154,14 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     private void handleMessage(Message message) throws TelegramApiException {
 
-        //Search Artists
+        //PlayerHandler Artists
         if (message.hasText() && chatStatus.getChatStatus(message.getChatId().toString()) == 1) {
             String searchSubString;
             String searchString = message.getText().trim();
             if (searchString.length() > 4) {
                 searchSubString = searchString.substring(0, 3);
             } else searchSubString = searchString;
-            List<Artist> searchResult = search.searchByArtist(searchSubString);
+            List<Artist> searchResult = playerHandler.searchByArtist(searchSubString);
             System.out.println(searchResult.size());
             if (searchResult.size() != 0) {
                 List<List<InlineKeyboardButton>> buttons = new ArrayList<List<InlineKeyboardButton>>();
